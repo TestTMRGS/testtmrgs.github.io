@@ -1,0 +1,113 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background: #2E4CAE;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Two-column layout with draggable resizer */
+#layout {
+    display: grid;
+    grid-template-columns: 35% 5px 65%;
+    height: 100%;
+}
+
+#left-panel {
+    border-right: 2px solid rgba(255,255,255,0.3);
+    padding: 20px;
+    text-align: center;
+    overflow-y: auto;
+}
+
+#left-panel h2 {
+    font-size: 2vw;
+    margin-bottom: 20px;
+}
+
+#half-hour-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+#half-hour-blocks div {
+    font-size: 2.5vw;
+}
+
+#drag-bar {
+    background: rgba(255,255,255,0.3);
+    cursor: col-resize;
+    width: 5px;
+    height: 100%;
+}
+
+#right-panel {
+    padding: 20px;
+    text-align: center;
+    overflow-y: auto;
+}
+
+#exam-title {
+    font-size: 3.5vw;
+}
+
+input {
+    width: 60%;
+    font-size: 1.8vw;
+    padding: 10px;
+    background: #1A3383;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#datetime {
+    margin-top: 20px;
+    font-size: 1.8vw;
+}
+
+#remaining-label {
+    font-size: 5vw;
+    margin: 20px 0;
+}
+
+#duration-section {
+    margin-top: 20px;
+    font-size: 1vw;
+    opacity: 0.6;
+}
+
+#duration-input {
+    width: 30%;
+    font-size: 1.2vw;    /* smaller inputs and buttons */
+    padding: 6px 12px;   /* smaller buttons and input */
+    opacity: 0.6;        /* slightly transparent individually */
+}
+
+button {
+    font-size: 1vw;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 10px;
+    border: none;
+    margin: 5px;
+    opacity: 0.6;
+}
+
+
+button:disabled {
+    opacity: 0.5;
+}
+
+#message-label {
+    margin-top: 20px;
+    font-size: 1.5vw;
+    color: #ddd;
+}
+
+#TR {
+    font-size:3vw
+}
