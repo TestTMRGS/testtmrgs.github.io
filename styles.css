@@ -111,3 +111,16 @@ button:disabled {
 #TR {
     font-size:3vw
 }
+
+#exam-entry {
+    width: 100%;
+    font-size: 4vw;
+    padding: 10px;
+    background: #1A3383;
+    border: none;
+    border-radius: 8px;
+    color: white;
+
+    text-align: center;   /* <-- this centers the text inside the input */
+    margin-bottom: 10px;
+}
